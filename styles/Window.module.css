@@ -1,0 +1,94 @@
+.window {
+	min-width: 800px;
+	min-height: 600px;
+	max-width: 800px;
+	max-height: 600px;
+
+	padding: 5px;
+	border-radius: 10px;
+
+	background-color: rgba(40,42,54, 0.85);
+	box-shadow: 2px 2px 10px black;
+
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	z-index: 1;
+}
+
+.window .header {
+	height: 30px;
+
+	display: flex;
+	align-items: center;
+}
+
+.buttons {
+	width: 75px;
+}
+
+ul.buttons {
+	list-style: none;
+	padding: 2px 5px;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+ul.buttons,
+.title {
+	background-color: #44475a;
+	border-radius: 20px;
+}
+
+ul.buttons, 
+.title, 
+.contents {
+	background-color: rgba(68,71,90, 0.8);
+}
+
+.button,
+.button.close {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+}
+
+.button {
+	background-color: rgba(98,114,164, 0.75);
+}
+
+.close {
+	background-color: rgba(255,85,85, 0.75);
+}
+
+.header .filler {
+	flex: 1;
+}
+
+.header .title {
+	padding: 2px 1em;
+}
+
+.contents {
+	flex: 1;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+@media (max-width: 800px) and (min-width: 400px ) {
+	.window {
+		max-width: 400px;
+		min-width: 400px;
+
+	}
+}
+
+@media (max-width: 400px) {
+	.window {
+		max-width: 100%;
+		min-width: 10px;
+		max-height: 100%;
+	}
+}
