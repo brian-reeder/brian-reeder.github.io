@@ -23,7 +23,7 @@ export default function Home() {
 	      </li>
 	      <li>
 	        <a href="https://github.com/brian-reeder" target="_blank">
-	          <i class="socials codicon codicon-github"></i>
+	          <i class="socials fa-brands fa-square-github"></i>
 	        </a>
 	      </li>
 	      <li>

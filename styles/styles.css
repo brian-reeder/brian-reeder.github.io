@@ -88,21 +88,62 @@ h1 {
   margin-bottom: 10px;
 }
 
-.socials, .contents {
+.contents {
   font-size: 1.2em !important;
 }
 
 
 .socials {
  font-style: normal;
+ text-decoration: none;
  display: block;
  margin: auto;
  text-align: center;
- z-index: 1; 
+ z-index: 1;
+}
+
+.socials.codicon {
+	height: 25px;
+	width: 25px;
+	font-size: 23px;
+	font-weight:bold;
+	padding: 1px 0 0 1px;
+	background-color: white;
+	border-radius: 3px;
+	color: rgba(68,71,90, 0.8);
+}
+
+.socials.fa-brands {
+ 	font-size: 30px;
+	margin-top: -5px;
+	border-radius: 2px;
+}
+
+.socials-list li a {
+  	color: #f8f8f2;
+	text-decoration: none;
+	margin: auto;
+
+}
+
+.socials.fa-brands:hover {
+	color: #50fa7b !important;
+}
+
+.socials.codicon:hover {
+	background-color: #50fa7b !important;
+}
+
+.socials-list li:not(:first-child) {
+	display: block;
+	height: 25px;
+	width: 25px;
+	border-radius: 5px;
 }
 
 .socials-list {
   min-height: 1.5em;
   margin: 10px 0;
   gap: 10px;
+  align-items: center;
 }
