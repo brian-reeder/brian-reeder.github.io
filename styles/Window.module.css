@@ -31,7 +31,7 @@
 }
 
 .buttons {
-	width: 75px;
+	min-width: 95px;
 }
 
 ul.buttons {
@@ -44,8 +44,10 @@ ul.buttons {
 
 ul.buttons,
 .title {
+	padding: 2px 15px;
 	background-color: #44475a;
 	border-radius: 20px;
+	height: 25px;
 }
 
 ul.buttons, 
@@ -101,6 +103,10 @@ ul.buttons,
 	.window {
 		min-width: 100%;
 		max-width: 10px;
+	}
+
+	.buttons {
+		min-width: 5px;
 	}
 }
 
