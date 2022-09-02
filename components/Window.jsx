@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from '../styles/Window.module.css';
 
 export default function Window({children}) {
@@ -6,7 +7,11 @@ export default function Window({children}) {
 		<div class={styles.window}>
 			<div class={styles.header}>
 				<ul class={styles.buttons}>
-					<li class={`${styles.button} ${styles.close}`}></li>
+					<Link href="/">
+						<a>
+							<li class={`${styles.button} ${styles.close}`}></li>
+						</a>
+					</Link>
 					<li class={styles.button}></li>
 					<li class={styles.button}></li>
 				</ul>
