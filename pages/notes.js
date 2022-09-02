@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
+	<meta name="description" content="Some notes, mind-maps,and other cheetsheets." />
         <title>@brian-reeder</title>
         //<link rel="icon" href="/favicon.ico" />
       </Head>
