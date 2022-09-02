@@ -8,7 +8,6 @@ export default function Home() {
       <Head>
 	<meta name="description" content="My personal blog." />
         <title>@brian-reeder</title>
-        //<link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
         <Desktop>
