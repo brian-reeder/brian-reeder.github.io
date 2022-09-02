@@ -7,7 +7,6 @@ export default function Home() {
       <Head>
 	<meta name="description" content="Personal website for Brian Reeder" />
         <title>@brian-reeder</title>
-        //<link rel="icon" href="/favicon.ico" />
       </Head>
         <Desktop></Desktop>
     </div>
