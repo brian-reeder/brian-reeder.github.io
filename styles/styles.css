@@ -17,62 +17,15 @@ html {
 
   color: #f8f8f2;
   font-family: 'Red Hat Mono', 'Consolas';
-
-  display: flex;
-  flex-direction: column;
 }
 
 body {
-  flex: 1;
   background-color: rgba(40,42,54, 0.75);
   min-height: 100vh;
 }
 
-ul {
-  list-style: none;
-}
-
 .container {
 	display: block;
-}
-
-.nav-item {
-  width: 75px;
-  height: 75px;
-  position: absolute;
-  display: block;
-}
-
-.nav-item a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.nav-item .codicon {
-  display: block;
-  margin: 0 auto;
-  font-size: 3em;
-}
-
-.nav-description {
-  width: 100%;
-  margin: 0 auto;
-  text-align:center;
-}
-
-#about-me {
- top: 15px;
- right: 15px;
-}
-
-#blog {
-  top: 115px;
-  right: 15px;
-}
-
-#notes {
-  top: 205px;
-  right: 15px;
 }
 
 .flex {
@@ -142,6 +95,7 @@ h1 {
 }
 
 .socials-list {
+  list-style: none;
   min-height: 1.5em;
   margin: 10px 0;
   gap: 10px;
