@@ -14,10 +14,10 @@ function FolderElement(props) {
 	  route = "/";
   }
   return (
-	  <li id={ styles[props.id] } class={ styles['nav-item'] }>
+	  <li id={ styles[props.id] } className={ styles['nav-item'] }>
             <Link href={ route }>
               <a>
-                <i class={ className }></i>
+                <i className={ className }></i>
                 { props.children }
               </a>
             </Link>
@@ -32,15 +32,15 @@ export default function Default({children}) {
 		  <Head>
 		    <title>@brian-reeder</title>
 		  </Head>
-		  <ul class={ styles['nav-list'] }>
+		  <ul className={ styles['nav-list'] }>
 		    <FolderElement id="about-me">
-		      <p class={ styles['nav-description'] }>About Me</p>
+		      <p className={ styles['nav-description'] }>About Me</p>
 		    </FolderElement>
 		    <FolderElement id="blog">
-		      <p class={ styles['nav-description'] }>Blog</p>
+		      <p className={ styles['nav-description'] }>Blog</p>
 		    </FolderElement>
 		    <FolderElement id="notes">
-		      <p class={ styles['nav-description'] }>Notes</p>
+		      <p className={ styles['nav-description'] }>Notes</p>
 		    </FolderElement>
 		  </ul>
 		  { children }
