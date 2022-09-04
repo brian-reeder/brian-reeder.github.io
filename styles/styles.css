@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Mono');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/brands.min.css');
 @import url('https://microsoft.github.io/vscode-codicons/dist/codicon.css');
 
@@ -16,12 +17,6 @@ html {
 
   color: #f8f8f2;
   font-family: 'Red Hat Mono', 'Consolas';
-}
-
-@font-face {
-  font-family: Monospace;
-  src: local('Consolas'), url('https://fonts.googleapis.com/css?family=Red+Hat+Mono');
-  font-display: swap;
 }
 
 body {
