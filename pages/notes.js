@@ -1,5 +1,9 @@
-import Head from 'next/head'
-import Window  from '../components/Window.jsx'
+import dynamic from 'next/dynamic';
+import Head from 'next/head';
+
+const Window = dynamic(() => import('../components/Window'), {
+	ssr: false,
+});
 
 export default function Home() {
   return (
