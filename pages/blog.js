@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <meta name="description" content="My personal blog." />
       </Head>
-      <Window></Window>
+      <Window title="Blog"></Window>
     </>
   )
 }

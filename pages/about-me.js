@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <meta name="description" content="How to contact Brian Reeder." />
       </Head>
-      <Window>
+      <Window title="About Me">
         <h1>Hi, I'm Brian!</h1>
         <p>I'm currently a Senior Cyber Security Analyst protecting computer networks from security threats. I graduated from the University of North Texas, where I studied Computer Science.</p>
 	<br />

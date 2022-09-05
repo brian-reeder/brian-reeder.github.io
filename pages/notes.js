@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
 	<meta name="description" content="Some notes, mind-maps,and other cheetsheets." />
       </Head>
-	  <Window></Window>
+	  <Window title="Notes"></Window>
     </>
   )
 }
