@@ -2,22 +2,29 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFolderOpen, faFolderClosed } from '@fortawesome/free-regular-svg-icons';
+
 import styles from '../styles/Layout.module.css';
 
 function FolderElement(props) {
   const router = useRouter()
   const pathname = "/" + props.id;
-  var className = `codicon codicon-folder ${styles['codicon']}`;
+  var icon = faFolderClosed;
+  var className = `${ styles['nav-icon'] } `;
   var route = props.id;
   if(pathname == router.pathname) {
-	  className = `codicon codicon-folder-opened ${styles['codicon']}`;
+	  icon = faFolderOpen;
+	  className +=  styles['active'];
 	  route = "/";
   }
   return (
 	  <li id={ styles[props.id] } className={ styles['nav-item'] }>
             <Link href={ route }>
               <a>
-                <i className={ className }></i>
+	        <span>
+                  <FontAwesomeIcon icon={ icon } className={ className } />
+	        </span>
                 { props.children }
               </a>
             </Link>
