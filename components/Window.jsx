@@ -7,19 +7,19 @@ export default function Window(props) {
 		  <div className={ styles.window }>
 		    <div className={ styles.header }>
 		      <ul className={ styles.buttons }>
-		        <i>
+		        <li>
 		          <Link href="/">
 		            <a>
 		              <div className={ `${styles.button} ${styles.close}` }></div>
 		            </a>
 		          </Link>
-		        </i>
-		        <i>
+		        </li>
+		        <li>
 		          <div className={ styles.button }></div>
-		        </i>
-		        <i>
+		        </li>
+		        <li>
 		          <div className={ styles.button }></div>
-		        </i>
+		        </li>
 		      </ul>
 		      <div className={ styles.filler }></div>
 		      <div className={ styles.title }>{ props.title }</div>
