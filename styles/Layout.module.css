@@ -9,16 +9,21 @@
   display: block;
 }
 
-i.codicon {
-  display: block !important;
+.nav-icon {
+  display: block;
   margin: 0 auto;
-  font-size: 3em !important;
+  font-size: 45px;
+}
+
+.nav-icon.active {
+  color: #8be9fd;
 }
 
 .nav-description {
   width: 100%;
   margin: 0 auto;
   text-align:center;
+  font-weight: bold;
 }
 
 .nav-item a {

@@ -1,4 +1,8 @@
 import Link from 'next/link';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircle, faCircleXmark, faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+
 import styles from '../styles/Window.module.css';
 
 export default function Window(props) {
@@ -10,15 +14,21 @@ export default function Window(props) {
 		        <li>
 		          <Link href="/">
 		            <a>
-		              <div className={ `${styles.button} ${styles.close}` }></div>
+		              <span className={ `${styles.button} ${styles.close}` }>
+		                <FontAwesomeIcon icon={ faCircleXmark } />
+		              </span>
 		            </a>
 		          </Link>
 		        </li>
 		        <li>
-		          <div className={ styles.button }></div>
+		          <span className={ styles.button }>
+		            <FontAwesomeIcon icon={ faCircle } />
+		          </span>
 		        </li>
 		        <li>
-		          <div className={ styles.button }></div>
+		          <span className={ styles.button }>
+		            <FontAwesomeIcon icon={ faCircle } />
+		          </span>
 		        </li>
 		      </ul>
 		      <div className={ styles.filler }></div>

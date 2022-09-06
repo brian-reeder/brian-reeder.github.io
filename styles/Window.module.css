@@ -56,23 +56,17 @@ ul.buttons,
 	background-color: rgba(68,71,90, 0.8);
 }
 
-.button,
-.button.close {
-	width: 15px;
-	height: 15px;
-	border-radius: 50%;
-}
-
 .button {
-	background-color: rgba(98,114,164, 0.75);
+	font-size: 16px;
+	color: rgba(98,114,164, 0.75);
 }
 
-.close {
-	background-color: rgba(255,85,85, 0.75);
+.button.close {
+	color: rgba(255,85,85, 0.75);
 }
 
-.close:hover {
-	background-color: rgba(255,125,85, 0.75);
+.button.close:hover {
+	color: rgba(255,125,85, 0.75);
 }
 
 
