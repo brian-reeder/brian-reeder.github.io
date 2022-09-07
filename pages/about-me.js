@@ -22,21 +22,21 @@ export default function Home() {
         <ul className="socials-list flex">
           <li><p>Connect with me</p></li>
           <li>
-            <a href="https://www.linkedin.com/in/brian-reeder/" target="_blank">
+            <a href="https://www.linkedin.com/in/brian-reeder/" aria-label="LinkedIn" target="_blank">
 	      <span className="social-icons">
 	        <FontAwesomeIcon icon={ faLinkedin } />
 	      </span>
             </a>
           </li>
           <li>
-            <a href="https://github.com/brian-reeder" target="_blank">
+            <a href="https://github.com/brian-reeder" aria-label="GitHub" target="_blank">
 	      <span className="social-icons">
 	        <FontAwesomeIcon icon={ faSquareGithub } />
 	      </span>
             </a>
           </li>
           <li>
-            <a href="mailto:brian.reeder@outlook.com" target="_blank">
+            <a href="mailto:brian.reeder@outlook.com" aria-label="E-Mail" target="_blank">
 	      <span className="social-icons">
 	        <FontAwesomeIcon icon={ faSquareEnvelope } />
 	      </span>
