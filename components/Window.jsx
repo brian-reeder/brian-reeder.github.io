@@ -13,7 +13,7 @@ export default function Window(props) {
 		      <ul className={ styles.buttons }>
 		        <li>
 		          <Link href="/">
-		            <a>
+		            <a aria-label="Close pane">
 		              <span className={ `${styles.button} ${styles.close}` }>
 		                <FontAwesomeIcon icon={ faCircleXmark } />
 		              </span>
