@@ -68,3 +68,14 @@ h1 {
 .social-icons *:hover {
 	color: #50fa7b !important;
 }
+
+ul {
+  list-style: none;
+}
+
+.dir {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  overflow-wrap: break-word;
+}
