@@ -72,10 +72,3 @@ h1 {
 ul {
   list-style: none;
 }
-
-.dir {
-  display: flex;
-  gap: 5px;
-  flex-wrap: wrap;
-  overflow-wrap: break-word;
-}
