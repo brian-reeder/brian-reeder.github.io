@@ -1,0 +1,7 @@
+.dir {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  overflow-wrap: break-word;
+}
+
