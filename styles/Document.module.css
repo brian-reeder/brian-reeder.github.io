@@ -54,3 +54,8 @@
   border-radius: 24px;
   padding: 2px;
 }
+
+.postlink {
+  color: inherit;
+  text-decoration: inherit;
+}
