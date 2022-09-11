@@ -20,6 +20,7 @@ export default function Default(props) {
 
 	return(
 		<>
+		  <a className={ styles.postlink } href={`#${props.src}`}>
 		  <div className={ styles.document }>
 		    <span className={ styles.file }>
 		      <FontAwesomeIcon icon={ faFileLines } />
@@ -33,6 +34,7 @@ export default function Default(props) {
 		        </div>
 		    </div>
 		  </div>
+		  </a>
 		</>
 	)
 }

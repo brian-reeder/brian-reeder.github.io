@@ -9,7 +9,7 @@ function Post(props) {
 	return (
 		<>
 		  <li>
-		    <Document title={props.title} />
+		    <Document title={ props.post.title } date={ props.post.date } src={ props.post.slug } />
 		  </li>
 		</>
 	);
@@ -20,7 +20,7 @@ export default function Default(props) {
 	return(
 		<>
 		  <ul className={ styles.dir }>
-		    { props.posts.map(post => <Post title={ post } />) }
+		    { props.posts.map(post => <Post post={ post } />) }
 		  </ul>
 		</>
 	);
