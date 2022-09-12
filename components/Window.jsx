@@ -44,7 +44,7 @@ function BackButton(props) {
 		return (
 			<>
 			  <Link href={ props.href }>
-			    <a>
+			    <a aria-label="Back">
 			      <span className={ `${styles.button} ${styles.back}` }>
 			        <FontAwesomeIcon icon={ faCircleChevronLeft } />
 			      </span>
