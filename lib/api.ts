@@ -37,7 +37,7 @@ export function getPostBySlug(slug: string, fields: string[] =[], postDir: strin
 }
 
 export function getAllPosts(fields: string[] = [], dir: string) {
-	const postDir = join(process.cwd(), 'pages', dir);
+	const postDir = join(process.cwd(), '_posts', dir);
 	const slugs  = getPostsSlugs(postDir);
 
 	const posts = slugs.map((slug) => getPostBySlug(slug, fields, postDir)).sort((post1, post2) => (post1.date > post2.date ? -1 : 1));

@@ -1,13 +1,13 @@
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 
-import { getAllPosts } from '../lib/api.ts';
+import { getAllPosts } from '../../lib/api.ts';
 
-const Window = dynamic(() => import('../components/Window'), {
+const Window = dynamic(() => import('../../components/Window'), {
 	ssr: false,
 });
 
-const Dir = dynamic(() => import('../components/Dir'), {
+const Dir = dynamic(() => import('../../components/Dir'), {
 	ssr: false,
 });
 
