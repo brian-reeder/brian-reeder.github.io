@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import{ join } from 'path';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFolderOpen, faFolderClosed } from '@fortawesome/free-regular-svg-icons';
@@ -12,8 +13,8 @@ function FolderElement(props) {
   const pathname = "/" + props.id;
   var icon = faFolderClosed;
   var className = `${ styles['nav-icon'] } `;
-  var route = props.id;
-  if(pathname == router.pathname) {
+  var route = `/${props.id}`;
+  if(router.pathname.startsWith(pathname)) {
 	  icon = faFolderOpen;
 	  className +=  styles['active'];
 	  route = "/";

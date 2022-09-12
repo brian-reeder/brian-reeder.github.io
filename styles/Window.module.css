@@ -69,6 +69,13 @@ ul.buttons,
 	color: rgba(255,125,85, 0.75);
 }
 
+.button.back {
+  color: rgba(241, 250, 140, 0.75);
+}
+
+.button.back:hover {
+  color: rgba(255, 250, 200, 0.75);
+}
 
 .header .filler {
 	flex: 1;
