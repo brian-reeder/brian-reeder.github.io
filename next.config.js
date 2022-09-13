@@ -8,6 +8,5 @@ const withMDX = require('@next/mdx')({
 });
 
 module.exports = withMDX({
-	basePath: '',
 	pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
 });
