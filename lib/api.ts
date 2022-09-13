@@ -2,8 +2,28 @@ import fs from 'fs';
 import { join } from 'path';
 import matter from 'gray-matter';
 
+export function getPostDir(dir: string) {
+	const postDir = join(process.cwd(), '_posts', dir);
+
+	return postDir;
+}
+
 export function getPostsSlugs(postDir: string) {
-	return fs.readdirSync(postDir);
+	const allSlugs = fs.readdirSync(postDir);
+	const mdxSlugs = allSlugs.filter(isMDX);
+	return mdxSlugs;
+}
+function isMDX(slug) {
+	return slug.endsWith("\.mdx");
+}
+
+function removeIndex(arr: []) {
+	const index = arr.indexOf('index.js');
+	if (index > -1) {
+		arr.splice(index, 1);
+	}
+
+	return arr;
 }
 
 export function getPostBySlug(slug: string, fields: string[] =[], postDir: string) {
@@ -37,7 +57,7 @@ export function getPostBySlug(slug: string, fields: string[] =[], postDir: strin
 }
 
 export function getAllPosts(fields: string[] = [], dir: string) {
-	const postDir = join(process.cwd(), '_posts', dir);
+	const postDir = getPostDir(dir);
 	const slugs  = getPostsSlugs(postDir);
 
 	const posts = slugs.map((slug) => getPostBySlug(slug, fields, postDir)).sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
