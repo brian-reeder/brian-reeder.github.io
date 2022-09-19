@@ -1,4 +1,5 @@
 import { getAllPosts, getPostBySlug } from '../../lib/api';
+import markdownToHtml from '../../lib/markdownToHtml';
 
 import Window from '../../components/Window';
 
@@ -6,7 +7,7 @@ export default function Post({ post }) {
 	return(
 	  <>
 	    <Window back="/notes" title={ post.title }>
-	      <h1>Hello, World!</h1>
+	      <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
 	    </Window>
 	  </>
 	);
@@ -19,10 +20,12 @@ export async function getStaticProps({ params }) {
 		'content',
 		'slug',
 	], 'notes');
+	const content = await markdownToHtml(post.content || '');
 	return {
 		props: {
 			post: {
 				...post,
+				content,
 			},
 		},
 	};
