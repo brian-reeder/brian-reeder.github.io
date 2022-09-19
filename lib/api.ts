@@ -2,14 +2,18 @@ import fs from 'fs';
 import { join } from 'path';
 import matter from 'gray-matter';
 
+export function getPostsDir(dir: string) {
+	return join(process.cwd(), '_posts', dir);
+}
+
 export function getPostsSlugs(postDir: string) {
 	return fs.readdirSync(postDir);
 }
 
-export function getPostBySlug(slug: string, fields: string[] =[], postDir: string) {
+export function getPostBySlug(slug: string, fields: string[] =[], dir: string) {
 	//const realSlug = slug.replace(/\.md$/,'');
 	//const fullPath = join(postDir, `${realSlug}.md`);
-	const fullPath = join(postDir, slug);
+	const fullPath = join(getPostsDir(dir), slug);
 	const fileContents = fs.readFileSync(fullPath, 'utf8');
 	const { data, content } = matter(fileContents);
 
@@ -37,10 +41,9 @@ export function getPostBySlug(slug: string, fields: string[] =[], postDir: strin
 }
 
 export function getAllPosts(fields: string[] = [], dir: string) {
-	const postDir = join(process.cwd(), '_posts', dir);
-	const slugs  = getPostsSlugs(postDir);
+	const slugs  = getPostsSlugs(getPostsDir(dir));
 
-	const posts = slugs.map((slug) => getPostBySlug(slug, fields, postDir)).sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+	const posts = slugs.map((slug) => getPostBySlug(slug, fields, dir)).sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
 
 	return posts;
 }
