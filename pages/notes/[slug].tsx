@@ -1,4 +1,4 @@
-import { getAllPosts, getPostBySlug } from '../../lib/api.ts';
+import { getAllPosts, getPostBySlug } from '../../lib/api';
 
 import Window from '../../components/Window';
 
