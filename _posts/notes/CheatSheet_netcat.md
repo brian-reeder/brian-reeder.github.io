@@ -2,18 +2,21 @@
 title: 'CheetSheet: netcat'
 date: '2022-09-20'
 ---
-- # Netcat
+- ## Netcat
+	---
 	Netcat is a networking tool that can provide simple network connections to read or write data between remote endpoints. This tool is useful for troubleshooting networks, exploring remote resources, and creating ad-hoc communication channels.
 
 	Unexpected use of this utility may be an indicator of malicious activity.
 
 - ## Basic Usage
+	---
 	```
 	// Arbitrary TCP and UDP connections and listens.
 	nc [options] <hostname> <dest_port(s)> 
 	```
 
 - ## Common Flags
+	---
 	[-4] Forces nc to use IPv4 addresses.
 	
 	[-6] Forces nc to use IPv6 addresses.
@@ -37,6 +40,7 @@ date: '2022-09-20'
 	[-w] Timeout, silently close connection if connection/stdin are idle for more than timeout seconds.
 
 - ## File Transfers
+	---
 	```
 	// On the file recipient.
 	nc -l -p 40000 > out.file
@@ -46,6 +50,7 @@ date: '2022-09-20'
 	```
 
 - ## Reverse Shell
+	---
 	This activity is highly unsual for a network admin to perform. If the following commands are observed, they should be viewed with extreme caution. I recommend establishing connections with more traditional methods for day-to-day admin activity.
 	```
 	// Standard

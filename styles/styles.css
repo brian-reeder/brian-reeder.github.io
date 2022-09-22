@@ -72,3 +72,32 @@ h1 {
 ul {
   list-style: none;
 }
+
+.note h2,
+.note hr {
+  color: #50fa7b;
+}
+
+.note p {
+  margin-top: 10px;
+}
+
+.note > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.note > ul > li {
+  max-width: 370px;
+  min-width: 370px;
+}
+
+.note pre {
+  white-space: pre-wrap;
+  margin-top: 10px;
+}
+
+.note code {
+  color: #bd93f9;
+}
