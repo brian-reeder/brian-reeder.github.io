@@ -76,6 +76,7 @@ ul {
 .note h2,
 .note hr {
   color: #50fa7b;
+  border-color: #50fa7b;
 }
 
 .note p {
