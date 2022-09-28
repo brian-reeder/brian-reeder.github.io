@@ -6,7 +6,7 @@ import Window from '../../components/Window';
 export default function Post({ post }) {
 	return(
 	  <>
-	    <Window back="/blog" title={ post.title }>
+	    <Window back="/blog" title="Blog">
 	      <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
 	    </Window>
 	  </>
