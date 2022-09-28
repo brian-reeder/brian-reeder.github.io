@@ -1,8 +1,8 @@
 ---
-title: 'CheetSheet: netcat'
+title: 'CheatSheet: netcat'
 date: '2022-09-20'
 ---
-- ## Netcat
+- ## CheatSheet: netcat
 	---
 	Netcat is a networking tool that can provide simple network connections to read or write data between remote endpoints. This tool is useful for troubleshooting networks, exploring remote resources, and creating ad-hoc communication channels.
 
