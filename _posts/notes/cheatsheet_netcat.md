@@ -1,6 +1,6 @@
 ---
 title: 'CheatSheet: netcat'
-date: '2022-09-20'
+description: 'Arbitrary TCP and UDP connections and listens.'
 ---
 - ## CheatSheet: netcat
 	---
