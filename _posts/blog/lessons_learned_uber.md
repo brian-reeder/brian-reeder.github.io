@@ -44,6 +44,6 @@ Here's what you should do to protect yourself from being impacted by this breach
 
 And lastly, if you find yourself as the victim of an MFA attack, it is always better to at least turn your phone off until you can deal with it.
 
-Cheers
+Cheers,
 
 Brian
