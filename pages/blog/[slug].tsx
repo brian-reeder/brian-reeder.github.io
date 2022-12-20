@@ -7,7 +7,7 @@ export default function Post({ post }) {
 	return(
 	  <>
 	    <Window back="/blog" title="Blog">
-	      <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
+	      <div className="blog" dangerouslySetInnerHTML={{ __html: post.content }}></div>
 	    </Window>
 	  </>
 	);

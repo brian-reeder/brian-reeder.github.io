@@ -14,6 +14,7 @@
 }
 
 html {
+  --dracula-purple: #bd93f9;
   background: #282a36;
   background-image: repeating-linear-gradient(to bottom, #8be9fd 0 4px, #ff79c6 0 6px, transparent 1px 100%),repeating-linear-gradient(to right, #8be9fd 0 4px, #ff79c6 0 6px, transparent 1px 100%);
   background-size: 95px 95px;
@@ -73,6 +74,25 @@ ul {
   list-style: none;
 }
 
+.blog {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.blog h2 {
+  padding-top: 10px;
+}
+
+.blog a,
+.note code {
+  color: var(--dracula-purple);
+}
+
+.blog ol {
+  list-style-position: inside;
+}
+
 .note h2,
 .note hr {
   color: #50fa7b;
@@ -97,10 +117,6 @@ ul {
 .note pre {
   white-space: pre-wrap;
   margin-top: 10px;
-}
-
-.note code {
-  color: #bd93f9;
 }
 
 ::-webkit-scrollbar {
