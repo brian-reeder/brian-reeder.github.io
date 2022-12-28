@@ -3,13 +3,8 @@ import Head from 'next/head';
 
 import { getAllPosts } from '../../lib/api.ts';
 
-const Window = dynamic(() => import('../../components/Window'), {
-	ssr: false,
-});
-
-const Dir = dynamic(() => import('../../components/Dir'), {
-	ssr: false,
-});
+import Window from '../../components/Window';
+import Dir from '../../components/Dir';
 
 export default function Home({ mappedPosts }) {
   return (
