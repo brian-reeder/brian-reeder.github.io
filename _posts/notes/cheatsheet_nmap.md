@@ -59,7 +59,7 @@ description: 'List scanned hosts and enumerate identified services.'
     
     [-O] Enable OS detection.
 
-    ### Detection Evasion and Spoofing
+    ### Detection Evasion
     
     [-S] Spoof source address.
     
@@ -67,7 +67,7 @@ description: 'List scanned hosts and enumerate identified services.'
 
     [--spoof-mac] Spoof your MAC address.
 
-- ## Common Ports and Services
+- ## Common Ports & Services
     ---
     7 - Ping/Echo Protocol
     
