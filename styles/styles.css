@@ -111,7 +111,7 @@ ul {
 
 .note > ul > li {
   max-width: 370px;
-  min-width: 370px;
+  min-width: 200px;
 }
 
 .note pre {
